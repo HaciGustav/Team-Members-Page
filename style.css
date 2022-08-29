@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: grid;
+    grid-template-areas: "head head head"
+                        "m1  m2 m3 "
+                        "m4  m5 m6 "
+                        "m7  m8 m9 ";
+    grid-template-columns: repeat(auto-fit, auto);
+    grid-template-rows:10%, repeat(5, 28%);
+    /* row-gap: 1rem; */
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.144);
+}
+.header{
+    grid-area: head;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header p{
+    width: 60%;
+}
+.header .explanation .firstLine{
+    font-size: 1.3rem;
+}
+.explanation{
+    grid-area: head;
+}
+.member{
+    width: 80%; 
+    margin: auto;
+}
+.member-1{
+    grid-area: m1;
+    
+}
+.member-2{
+    grid-area: m2;
+    
+}
+.member-3{
+    grid-area: m3;
+}
+.member-4{
+    grid-area: m4;
+}
+.member-5{
+    grid-area: m5;
+    
+}
+.member-6{
+    grid-area: m6;
+}
+.member-7{
+    grid-area: m7;
+}
+.member-8{
+    grid-area: m8;
+    
+}
+.member-9{
+    grid-area: m9;
+}
+img{
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.7) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+.member-5 img{
+    height: 13.5rem;
+}
+
+
+.titel{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display: inline-block;
+    height: 20%;
+    font-size: 0.5rem;
+}
